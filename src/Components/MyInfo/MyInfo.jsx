@@ -8,7 +8,7 @@ const MyInfo = () => {
             <div className={styles.infoBlock}>
                 <p>Hi there 😊</p>
                 <h1>I am <span>Marodi Mykhailo</span></h1>
-                <h2>Front-end developer</h2>
+                <p>Front-end developer</p>
             </div>
             <div className={styles.myPhoto}>
                 <img src={portfPhoto} alt={'My Photo'}/>
