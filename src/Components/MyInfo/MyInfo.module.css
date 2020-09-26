@@ -1,0 +1,72 @@
+.myInfo{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background: #FFD4E4;
+}
+.infoBlock{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infoBlock h1{
+    font-size: 40px;
+    line-height: 2;
+    position: relative;
+    z-index: 1;
+    word-spacing: 15px;
+}
+
+.infoBlock h1 span:before{
+    content: '';
+    width: 73%;
+    color: red;
+    border: 9px solid;
+    position: absolute;
+    bottom: 12px;
+    right: -10px;
+    z-index: -1;
+    border-radius: 20px 0;
+    opacity: .7;
+}
+
+.infoBlock h2:after{
+    content: '';
+    width: 100%;
+    color: red;
+    border: 1px solid;
+}
+
+.myPhoto img{
+    max-width: 100%;
+}
+
+@media all and (max-width: 1030px){
+    .myInfo{
+        flex-direction: column;
+    }
+    .infoBlock{
+        margin: 0 auto;
+    }
+    .myPhoto{
+        margin: 50px auto 0;
+    }
+}
+
+@media all and (max-width: 500px){
+    .infoBlock h1 {
+       font-size: 8vw;
+    }
+    .infoBlock h1 span:before{
+        transition: all .5s;
+        border: 5px solid red;
+        right: -8px;
+    }
+}
+
+
+
+
