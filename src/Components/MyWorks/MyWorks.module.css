@@ -1,0 +1,17 @@
+.myWorks{
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    background: #ECD9FF;
+}
+
+.myWorks h1{
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.worksBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
