@@ -1,11 +1,11 @@
 .workBox {
     display: flex;
     flex-direction: column;
-    max-width: 40%;
+    max-width: 45%;
     margin: 20px 0;
 }
 
-.imgBox{
+.imgBox {
     position: relative;
     max-width: 700px;
 }
@@ -15,36 +15,33 @@
     flex-direction: column;
     justify-content: space-between;
     max-width: 100%;
-    width: 450px;
-    height: 450px;
     border-radius: 30px;
     background-image: url(https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/1884e9zof7czzjpg.jpg);
-    background-size: 200%;
+    background-size: 100%;
     background-position: center;
     transition: all .7s;
-   }
+}
 
 .img:hover {
     background-size: 250%;
-    -webkit-box-shadow: inset 0px -50px 82px 165px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px -50px 82px 165px rgba(0,0,0,0.75);
-    box-shadow: inset 0px -50px 82px 165px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0px -50px 82px 165px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px -50px 82px 165px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px -50px 82px 165px rgba(0, 0, 0, 0.75);
 }
 
-.title{
+.title {
     font-size: 50px;
     font-weight: bold;
     color: white;
-    margin: 0 auto;
+    margin: 20px auto;
+    width: -moz-fit-content;
     width: fit-content;
-    padding-top: 40px;
     opacity: 0;
 }
 
-.description{
+.description {
     font-size: 24px;
     margin: 0 auto;
-    padding-bottom: 60px;
     padding-left: 20px;
     padding-right: 20px;
     max-width: 100%;
@@ -55,32 +52,30 @@
     opacity: 0;
 }
 
-.img:hover .title{
+.img:hover .title {
     transition: opacity .7s;
     opacity: 1;
 }
-.img:hover .description{
+
+.img:hover .description {
     transition: opacity .7s;
     opacity: 1;
 }
 
 
-.wrap:hover .workButton{
-    transition: opacity .7s;
+.wrap:hover .workButton {
     opacity: 1;
 }
 
 .workButton {
-    position: absolute;
-    top: 30%;
-    right: 27%;
+    position: relative;
     background-color: #f39c12;
     border: none;
     border-radius: 15px 0;
     padding: 15px 0;
+    margin: 20px auto;
     width: 200px;
     text-align: center;
-    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
@@ -89,15 +84,19 @@
     cursor: pointer;
 }
 
-.workButton:hover{
-    background:#fff;
-    box-shadow:0 2px 10px 5px #97B1BF;
-    color:#ECD9FF;
+.workButton:hover {
+    background: #fff;
+    box-shadow: 0 2px 10px 5px #f39c12;
+    color: #52247d;
+}
+
+.workButton:focus {
+    outline: none;
 }
 
 .workButton:after {
     content: "";
-    background: #f1c40f;
+    background: #90EE90;
     display: block;
     position: absolute;
     padding-top: 300%;
@@ -115,21 +114,16 @@
     transition: 0s
 }
 
-.workButton:focus{
-    outline: none;
-}
-
 .workButton:hover + div {
-    -webkit-box-shadow: inset 0px -50px 82px 165px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px -50px 82px 165px rgba(0,0,0,0.75);
-    box-shadow: inset 0px -50px 82px 165px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0px -50px 82px 165px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px -50px 82px 165px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px -50px 82px 165px rgba(0, 0, 0, 0.75);
     background-size: 250%;
 }
 
-.workButton:hover + div .title{
-    opacity: 1;
-}
-.workButton:hover + div .description{
-    opacity: 1;
+@media all and (max-width: 900px) {
+    .workBox {
+        max-width: 100%;
+    }
 }
 

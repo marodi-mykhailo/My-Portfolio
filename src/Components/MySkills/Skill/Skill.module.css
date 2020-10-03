@@ -21,3 +21,16 @@
     padding: 10px 0;
     font-size: 24px;
 }
+
+@media all and (max-width: 1200px){
+    .skillBox {
+        max-width: 40%;
+    }
+}
+
+@media all and (max-width: 900px){
+    .skillBox {
+        max-width: 100%;
+        flex-direction: column;
+    }
+}
