@@ -4,12 +4,12 @@ import Button from "../common/Button/Button";
 
 const RemoteWork = () => {
     return (
-        <div className={styles.wrapper}>
+        <section className={styles.wrapper}>
             <h1 className={styles.header}>consider the possibility of remote work</h1>
             <div className={styles.buttonWrapper}>
                 <Button/>
             </div>
-        </div>
+        </section>
     );
 };
 
