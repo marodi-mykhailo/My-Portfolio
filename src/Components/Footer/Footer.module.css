@@ -1,33 +1,32 @@
-.footer{
+.footer {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #F7F7F7;
     border-top: 1px solid #d8d8d8;
 }
 
-.header{
+.header {
     text-align: center;
     font-size: 32px;
     text-transform: uppercase;
     padding: 20px 0;
 }
 
-.mediaBox{
+.mediaBox {
     display: flex;
     justify-content: space-around;
     margin: 35px 0;
 }
 
-.link{
+.link {
     display: block;
     text-decoration: none;
     cursor: pointer;
 }
 
-.iconBox{
+.iconBox {
     width: 60px;
     margin: 0 auto;
-    display: block;
     font-size: 40px;
     text-align: center;
     color: #0f0f0f;
@@ -36,10 +35,12 @@
     transition-duration: .7s;
     transition-delay: .1s;
     transition-timing-function: ease;
+    display: flex;
+    justify-content: center
 }
 
 
-.link:nth-child(1) .iconBox:hover{
+.link:nth-child(1) .iconBox:hover {
     color: #fff;
     width: 60px;
     margin: 0 auto;
@@ -47,17 +48,19 @@
     background-color: #3b5998;
 }
 
-.link:nth-child(2) .iconBox:hover{
+.link:nth-child(2) .iconBox:hover {
     color: #31a6f1;
 }
-.link:nth-child(3) .iconBox:hover{
+
+.link:nth-child(3) .iconBox:hover {
     color: #fff;
     width: 60px;
     margin: 0 auto;
-    border-radius: 30px;
-
+    border-radius: 25%;
+    background-color: #0f0f0f;
 }
-.link:nth-child(4) .iconBox:hover{
+
+.link:nth-child(4) .iconBox:hover {
     color: #fff;
     width: 60px;
     margin: 0 auto;
@@ -65,7 +68,7 @@
     background-color: #0073b0;
 }
 
-.copyrightWrap{
+.copyrightWrap {
     text-align: center;
     font-size: 18px;
 }

@@ -21,6 +21,13 @@ header {
     display: flex;
     justify-content: space-between;
 }
+.navBar ul li {
+    cursor: pointer;
+    transition: color .5s;
+}
+.navBar ul li:hover {
+    color: #f39c12;
+}
 
 
 @media all and (max-width: 800px) {
