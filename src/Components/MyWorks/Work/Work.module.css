@@ -86,5 +86,21 @@
     .workBox {
         max-width: 100%;
     }
+
+    .img {
+        background-size: 250%;
+        -webkit-box-shadow: inset 0px -50px 82px 165px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: inset 0px -50px 82px 165px rgba(0, 0, 0, 0.75);
+        box-shadow: inset 0px -50px 82px 165px rgba(0, 0, 0, 0.75);
+    }
+    .img .title {
+        transition: opacity .7s;
+        opacity: 1;
+    }
+
+    .img .description {
+        transition: opacity .7s;
+        opacity: 1;
+    }
 }
 
