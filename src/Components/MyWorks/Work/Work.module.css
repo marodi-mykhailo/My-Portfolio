@@ -82,11 +82,13 @@
     background-size: 250%;
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 990px) {
     .workBox {
         max-width: 100%;
     }
 
+}
+@media screen and (max-width: 1024px) {
     .img {
         background-size: 250%;
         -webkit-box-shadow: inset 0px -50px 82px 165px rgba(0, 0, 0, 0.75);
@@ -100,6 +102,9 @@
 
     .img .description {
         transition: opacity .7s;
+        opacity: 1;
+    }
+    .wrap .workButton {
         opacity: 1;
     }
 }
